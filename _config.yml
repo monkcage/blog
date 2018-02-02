@@ -1,1 +1,17 @@
+### Site info
+title: MonkCage's Blog
+author: MonkCage
+email: monk_lp@sina.com
+baseurl: "/blog"
+url: "https://monkcage.github.io/blog"
+
+### Build settings
+markdown: kramdown
+kramdown: 
+        input: GFM
+        syntax_highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+excerpt_separator: <!--more-->
+
 theme: jekyll-theme-cayman
