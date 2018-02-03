@@ -29,11 +29,7 @@ layout: default
       </p>
     </header>
 
-    {%- capture _excerpt -%}
-      <article class="post-content" itemprop="articleBody">
-      {{- post.excerpt | strip_html | truncatewords: 100 -}}
-      </article> 
-    {%- endcapture -%}
+    {%- capture _excerpt -%}<p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p> {%- endcapture -%}
     {%- capture _link -%}<a href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
     
     {% endfor %}
