@@ -32,7 +32,7 @@ layout: default
     {%- capture _excerpt -%}
       <article class="post-content" itemprop="articleBody">
       {{- post.excerpt | strip_html | truncatewords: 100 -}}
-      </article> <hr />
+      </article> 
     {%- endcapture -%}
     {%- capture _link -%}<a href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
     
