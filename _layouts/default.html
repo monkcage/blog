@@ -8,12 +8,18 @@
   <body>
     
     <div class="container">
+      
       {% include header.html %}
+      
       <div class="page-content">
         <div class="wrapper">
           {{ content }}
         </div>
       </div>
+      
+      {% include post_pagination.html %}
+      {% include footer.html %}
+      
     </div>
     
   </body>
