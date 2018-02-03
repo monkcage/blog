@@ -1,9 +1,11 @@
 ### Site info
 title: MonkCage's Blog
+tagline: A little change of each day makes a great difference!
 author: MonkCage
 email: monk_lp@sina.com
 baseurl: "/blog"
 url: "https://monkcage.github.io/blog"
+locale: en_US
 
 locales:
     en:
