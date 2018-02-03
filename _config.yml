@@ -5,27 +5,7 @@ author: MonkCage
 email: monk_lp@sina.com
 baseurl: "/blog"
 url: "https://monkcage.github.io/blog"
-locale: en_US
 
-locales:
-    en:
-      Aboutme: "About Me"
-      Archives: "Archives"
-      Blogroll: "Blogroll"
-      Categories: "Categories"
-      Copyright_Notice: "Copyright Notice"
-      Recent_Posts: "Recent Posts"
-      Tags: "Tags"
-      Previous: "Older"
-      Next: "Newer"
-      PostedInCategories: "Posted in"
-      Taggedwith: "and tagged"
-      PostDate: "on "
-      Google_search: "Site Search"
-      Home: "Home"
-      About: "About"
-      Guestbook: "Guestbook"
-      Subscribe: "Subscribe"
 
 ### Build settings
 markdown: kramdown
