@@ -1,5 +1,0 @@
----
-layout: dafault
----
-
-default gsfd
