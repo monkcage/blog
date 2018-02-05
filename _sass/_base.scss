@@ -59,6 +59,20 @@ ul, ol, dl, figure,
   box-shadow: 1px 1px 10px #BBB;
 }
 
+.pages {
+  min-height:100%;
+  max-width: -webkit-calc(#{$page-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$page-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  padding-top:30px;
+
+  background-color:#fff;
+  box-shadow: 1px 1px 10px #BBB;
+}
+
 /*for media*/
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
