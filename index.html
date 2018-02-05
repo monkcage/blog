@@ -26,7 +26,7 @@ layout: default
     </header>
 
     {%- capture _excerpt -%}<p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p> {%- endcapture -%}
-    {%- capture _link -%}<a style="text-align:center;" href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
+    {%- capture _link -%}<p style="text-align:center;"><a href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
     {%- assign _content = _excerpt | append: _link -%}
     <div>
       {{ _content }}
