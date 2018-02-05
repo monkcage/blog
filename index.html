@@ -13,10 +13,10 @@ layout: default
       </h1>
       <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />
       <p class="post-meta" style="text-align:center">
-        {{ post.author |}}
+        {{ post.author }} |
       {% if post.tags != empty %}
         {% for tag in post.tags %}
-          {% unless post.tags.last == tag %}, {% endunless %}{{ | }}
+          {{ tag }}{% unless post.tags.last == tag %}, {% endunless %} |
         {% endfor %}
       {% endif %}
       <time itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
