@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="container">
   <div class="post" itemscope itemtype="http://schema.org/BlogPosting" >
     
     {% for post in paginator.posts %}
@@ -32,7 +32,7 @@ layout: default
     {%- capture _excerpt -%}<p>{{- post.excerpt | strip_html | truncatewords: 100 -}}</p> {%- endcapture -%}
     {%- capture _link -%}<a href="{{- post.url | absolute_url -}}">read more</a>{%- endcapture -%}
     {%- assign _content = _excerpt | append: _link -%}
-    <div style="border:1px solid #8e8e8e">
+    <div>
       {{ _content }}
     </div>
     
