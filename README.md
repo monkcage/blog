@@ -71,9 +71,9 @@ gitment.render('gitmentContainer');
 ```
 
 ### Demo
-Single column, please see my own blog
+Single column, please see [blog](http://yulijia.net/en/)
 
-Two columns, please see the theme website
+Two columns, please see the [theme website](http://yulijia.net/freshman21/)
 
 
 ### Reference
