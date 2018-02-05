@@ -2,7 +2,8 @@
 layout: post
 title: 相信未来
 author: 食指
-category: 诗-摘
+category: poems
+tag: [poet,poem]
 ---
 
 * 当制作网无情的查封了我的炉台，
