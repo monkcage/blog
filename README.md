@@ -1,37 +1,80 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/monkcage/blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Install
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. fork库到自己的github
+2. 修改仓库名字
+3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
+4. 修改CNAME，或者删掉这个文件，使用默认域名
+5. 修改`_config.yml`配置项
+6. It's done!
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### yml configure
+1. 如果博客主页没有指定的样式，在yml文件中加入（具体路径根据自己的目录设定）:
+```
+css： /assets/css
+js: /assets/js
+image: /assets/images
+```
+2. 博客头像
+可以为网络图片链接，也可以保存在assets目录下；
+```
+avatar: /assets/img/avatar.jpg
+favicon: /assets/img/favicom.jpg
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 第三发评论系统 
+* 国内没有比较好的评论系统，而且有些需要个人博客备案，但对于github pages来说，备案也是件难事了；
+* 国外比较火的disqus也被伟大的GFW墙了；
+* 最终只能选择gitment(虽然好评如潮，但是还是觉得太丑！)；
 
-### Jekyll Themes
+1. [注册](https://github.com/settings/applications/new) 
+* Application name : 自定义
+* Homepage URL ： <usrname>.github.io
+* Applicaiton description: 自定义
+* Authorization callback URL : <usrname>.github.io
+2. 注册之后会生成client ID 和 client secret；
+3. 通常在_layouts下有post.html的页面文件，在文件中加入内容：
+```
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '页面 ID', // 可选。默认为 location.href
+  owner: '你的 GitHub ID',
+  repo: '存储评论的 repo',
+  oauth: {
+    client_id: '你的 client ID',
+    client_secret: '你的 client secret',
+  },
+})
+gitment.render('container')
+</script>
+```
+或
+```
+  <div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: '',
+    repo: '',
+    oauth: {
+        client_id: '',
+        client_secret: '',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/monkcage/blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Demo
+Single column, please see my own blog
 
-### Support or Contact
+Two columns, please see the theme website
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Reference
+[yulijia](https://github.com/yulijia/freshman21)
