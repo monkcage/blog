@@ -52,23 +52,7 @@ var gitment = new Gitment({
 gitment.render('container')
 </script>
 ```
-或
-```
-  <div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: '',
-    repo: '',
-    oauth: {
-        client_id: '',
-        client_secret: '',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
-```
+
 
 ### Demo
 Single column, please see [blog](http://yulijia.net/en/)
