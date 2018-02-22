@@ -9,6 +9,7 @@ tags : camke
 ## hello world
 
 *   最基本CMakeLists文件看起来像是这样:
+
 ```
 cmake_minimum_required(VERSION 3.0)
 project(Tutorial)
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
 ```
 
 *  添加版本号
+
 ```
 cmake_minimum_required(VERSION 3.0)
 project(Tutorial)
@@ -47,12 +49,16 @@ include_directories(${PROJECT_BINARY_DIR})
 
 add_executable(Tutorial tutorial.cxx)
 ```
+
     TutorialConfig.h.in
+    
 ```
 #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
 #define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
 ```
+
    tutorial.cxx
+   
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -68,6 +74,7 @@ int main(int argc, char *argv[])
 
 ## 引入自定义库
     目录结构如下
+    
  ```
         ---example
            |---------hello_world.cxx
@@ -77,7 +84,9 @@ int main(int argc, char *argv[])
                       |--------mymath.cxx
                       |--------CMakeLists.txt
  ```
+ 
  * 主CMakeLists.txt
+ 
  ```
 cmake_minimum_required(VERSION 3.0)
 project(Tutorial)
@@ -100,18 +109,24 @@ add_executable(Tutorial tutorial.cxx)
 
 target_link_libraries(Tutorial mymath)
  ```
+ 
  * math中CMakeList.txt
+ 
  ```
  add_library(mymath mymath.cxx)
  ```
+ 
  * mymath.cxx
+ 
  ```
  int myadd(int a, int b)
  { return a+b; }
  ```
+ 
  * hello_world.cxx
+ 
  ```
- #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "TutorialConfig.h"
 
