@@ -16,10 +16,10 @@ plugins: [jekyll-paginate]
 paginate: 5
 excerpt_separator: <!--more-->
 
-gitment:
-        enable: true
-        repo: monkcage.github.io
-        client_id: 3d0c8190913cd8174466
-        client_secret: 5fba2e448e2da8566bfc8db8bd6c028e12cb98ef
+#gitment:
+#        enable: true
+#        repo: monkcage.github.io
+#        client_id: 3d0c8190913cd8174466
+#        client_secret: 5fba2e448e2da8566bfc8db8bd6c028e12cb98ef
 
 theme: jekyll-theme-cayman
