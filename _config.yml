@@ -3,8 +3,8 @@ title: Psychic Island
 tagline: A little change of each day makes a great difference!
 author: MonkCage
 email: monk_lp@sina.com
-baseurl: "/"
-url: "https://monkcage.github.io"
+#baseurl: ""
+url: "https://monkcage.github.io/"
 
 
 ### Build settings
