@@ -1,14 +1,14 @@
-<div id="gitcomment"></div>
+<div id="gitmentContainer"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  owner: 'monkcage',
-  repo: 'monkcage.github.io',
-  oauth: {
-    client_id: '3d0c8190913cd8174466',
-    client_secret: '5fba2e448e2da8566bfc8db8bd6c028e12cb98ef',
-  },
-})
-gitment.render('gitcomment')
+    owner: 'monkcage',
+    repo: 'monkcage.github.io',
+    oauth: {
+        client_id: '3d0c8190913cd8174466',
+        client_secret: '5fba2e448e2da8566bfc8db8bd6c028e12cb98ef',
+    },
+});
+gitment.render('gitmentContainer');
 </script>
