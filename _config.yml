@@ -17,9 +17,9 @@ paginate: 5
 excerpt_separator: <!--more-->
 
 gitment:
-  githubID: monkcage
-  repo: monkcage.github.io
-  ClientID: 3d0c8190913cd8174466
-  ClientSecret: 5fba2e448e2da8566bfc8db8bd6c028e12cb98ef
+        githubID: monkcage
+        repo: monkcage.github.io
+        ClientID: 3d0c8190913cd8174466
+        ClientSecret: 5fba2e448e2da8566bfc8db8bd6c028e12cb98ef
 
 theme: jekyll-theme-cayman
