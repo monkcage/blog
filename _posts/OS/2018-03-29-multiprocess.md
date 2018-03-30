@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 进程通信
-category： os
+category: os
 tags: [multiprocess,ipc]
 ---
 
