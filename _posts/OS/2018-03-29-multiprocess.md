@@ -29,3 +29,15 @@ tags: [multiprocess,ipc]
 * socket 
 
 **以上方式除了最后一种，其余的都只能用于同一宿主的不同进程，最后一种能用于同一宿主的不同进程和不同宿主的不同进程**
+
+据说是腾讯的面试题：
+
+    void main(int argc, char *argv[])
+    {
+       for(int i=0; i<2; ++i){
+           fork();
+           printf("g");
+       }
+    }
+ 
+ 问最后输出几个g？
