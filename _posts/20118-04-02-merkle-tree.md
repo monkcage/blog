@@ -14,5 +14,9 @@ tags: [algo, merkle]
 
 http://www.ethdocs.org/en/latest/
 
+http://tieba.baidu.com/p/5430016216?red_tag=l1397910021&traceid=
+
+http://www.tangshuang.net/4117.html
+
 
 
