@@ -7,6 +7,10 @@ tags: [os, nginx, signal]
 
 https://blog.csdn.net/spch2008/article/details/38945033
 
+https://www.cnblogs.com/davidwang456/p/3565653.html
+
+https://blog.csdn.net/initphp/article/details/51832114
+
 
 **在main函数中ngx_init_signal()进行信号初始化操作**
 ```c
