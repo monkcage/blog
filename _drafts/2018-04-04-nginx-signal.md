@@ -5,6 +5,9 @@ category: Nginx
 tags: [os, nginx, signal]
 ---
 
+https://blog.csdn.net/spch2008/article/details/38945033
+
+
 **在main函数中ngx_init_signal()进行信号初始化操作**
 ```c
 ngx_int_t 
