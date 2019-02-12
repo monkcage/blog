@@ -200,7 +200,7 @@ tags: [ai, cnn, lstm]
   x = x.reshape((x.shape[0], x.shape[1], 1))
   
   model = Sequential()
-  model.add(LSTM(50, activation='relu', input_shape(3, 1)))
+  model.add(LSTM(50, activation='relu', input_shape=(3, 1)))
   model.add(Dense(1))
   model.compile(optimizer='adam', loss='mse')
   
