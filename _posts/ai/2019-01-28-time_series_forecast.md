@@ -266,7 +266,8 @@ tags: [ai, cnn, lstm]
   
 ### Part 07: Encoder-Decoder LSTM Multi-step Forecasting
 
-```python# multi-step encoder-decoder lstm example
+```python
+# multi-step encoder-decoder lstm example
 from numpy import array
 from keras.models import Sequential
 from keras.layers import LSTM
